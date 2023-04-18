@@ -1,41 +1,20 @@
+@import url("./cabecalho.css");
+@import url("./conteudo.css");
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.cabecalho {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color:aquamarine ;
+html {
+    font-size: 62.7%px;
 }
 
-.cabecalho nav {
-    display: flex;
-    justify-content: space-around;
-    width: 60%;
-    height: 100%;
-    flex-wrap: wrap;
-}
-
-.cabecalho img {
-    width: 30%;
-    max-width: 30%;
-}
-
-.cabecalho a {
-    text-decoration: none;
-    font-size: 4em;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 700;
-    color: blue;
+.tit-sec {
     text-align: center;
-    padding: 20% 0;
+    font-size: 5em;
 }
 
-.cabecalho a:hover {
-    color: black;
-    background-color: aliceblue;
-}
+/*vw = view width
+vh = view height*/
