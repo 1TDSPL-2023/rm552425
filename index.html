@@ -7,7 +7,6 @@
         <title>My layout</title>
         <link rel="stylesheet" href="./css/estilo.css">
     </head>
-
     <body> 
         <header class="cabecalho">
             <img src="./img/http.png" alt="monitor">
@@ -54,6 +53,31 @@
                 <a href="#"><img src="./img/facebook.png" alt="facebook"></a>
                 <a href="#"><img src="./img/twitter.png" alt="twitter"></a>
             </nav>
+
+            <div>
+                <form action="/apelido" method="get" onsubmit="return true">
+                    <fieldset>
+                        <legend>Contato</legend>
+                        <div>
+                            <label for="idEmail">Email</label>
+                            <input type="email" name="txtemail" id="idEmail" required placeholder="Email">
+                        </div>
+                    </fieldset>
+                    <div>
+                        <label for="idNome">Nome</label>
+                        <input type="text" name="txtNome" id="idNome" required placeholder="Nome">
+                    </div>
+                    <div>
+                        <label for="IdGrava">Guardar Dados</label>
+                        <input type="checkbox" name="txtGrava" id="idGrava" required>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+            <!-- action = as informações são enviadas pelo action, pode colocar todo o endereço protegido ou apenas um apelido; na url, o action vem antes do ponto de interrogação
+            parametro = tudo que vem depois da interrogação é parâmetro-->
 
         </footer>
     </body>
