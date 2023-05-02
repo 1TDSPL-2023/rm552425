@@ -10,8 +10,11 @@ h2Element.addEventListener("click", () =>{
     let b = "";
 
     r = Math.round(Math.random()*255);
-    console.log(r);
-
-    this.textContent = "NOVO TÍTULO";
+    g = Math.round(Math.random()*255);
+    b = Math.round(Math.random()*255);
+    
+    //h2Element.setAttribute("style", "color:rgb("+r+","+g+","+b+");");
+    h2Element.setAttribute("style", `color:rgb(${r},${g},${b});`);
+    h2Element.textContent = "Novo título";
 });
 
