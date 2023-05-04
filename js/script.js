@@ -64,7 +64,7 @@ nr3.forEach((nr)=>{
     console.log("Itens do novo array: " + nr);
 });
 
-let nr3 = [...nr1,...nr2];
+let nr4 = [...nr1,...nr2];
 
 const aElements = documents.getElementByTagName("a")
 console.log(aElements)
