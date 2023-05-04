@@ -1,6 +1,5 @@
-//atrelando o evento click ao elemento h2
+//ATRELANDO O EVENTO CLICK AO ELEMENTO H2
 //const h2Element = document.getElementById("titulo");
-
 
 //h2Element.addEventListener("click", () =>{
     //Math função matemática
@@ -20,57 +19,10 @@
     
 //b = Math.round(Math.random()*255);
     
-    //h2Element.setAttribute("style", "color:rgb("+r+","+g+","+b+");");
+//h2Element.setAttribute("style", "color:rgb("+r+","+g+","+b+");");  //VERSÃO MENOS LIMPA
     
-//h2Element.setAttribute("style", `color:rgb(${r},${g},${b});`);
+//h2Element.setAttribute("style", `color:rgb(${r},${g},${b});`);  //VERSÃO MAIS LIMPA; QUANDO CLICA, MUDA A COR ALEATORIAMENTE
     
-//h2Element.textContent = "Novo título";
+//h2Element.textContent = "Novo título"; //QUANDO CLICA NO TÍTULO, MUDA O TEXTO
 
 //});
-
-
-//var ignora escopos e let não ignora
-var nome1 = "Mariana";
-
-if (nome = ""){
-    var nome = "Leonardo";
-}
-console.log();
-
-//Não se pode alterar o conteúdo de uma constante durante o fluxo do programa
-//Na declaração você é obrigado a inicializar a constante - passar um valor
-const PI = 3.14;
-
-//ARRAY são colections
-let frutas = ["uva", "laranja", "banana", "maçã", "kiwi", "abacate"];
-console.log(frutas);
-console.log[0];
-console.log[1];
-console.log[2];
-console.log("Minhas frutas: " + frutas);
-
-frutas.forEach( (fruta)=>{
-    console.log(fruta);
-} );
-
-let nr1 = [1,2,3,4,5];
-let nr2 = [6,7,8,9,10];
-
-let nr3 = [nr1,nr2];
-
-console.log("Novo array: " + nr3);
-
-nr3.forEach((nr)=>{
-    console.log("Itens do novo array: " + nr);
-});
-
-let nr4 = [...nr1,...nr2];
-
-const aElements = documents.getElementByTagName("a")
-console.log(aElements)
-const aElementsArray = [...aElements];
-console.log(aElementsArray);
-
-aElementsArray.forEach((a)=>{
-    console.log(a.href);
-})
