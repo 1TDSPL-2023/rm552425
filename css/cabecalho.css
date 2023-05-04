@@ -29,6 +29,7 @@
     padding: 20vh 0;
 }
 
+/* hover serve para mudar a cor quando passa o mouse por cima*/
 .cabecalho a:hover {
     color: black;
     background-color: aliceblue;
