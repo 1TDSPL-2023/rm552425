@@ -9,7 +9,7 @@
 
 .rodape nav {
     display: flex;
-    margin-top: 4%;
+    justify-content: space-around;
     width: 100%;
 }
 

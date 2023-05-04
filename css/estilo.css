@@ -19,9 +19,10 @@ html {
     font-size: 5em;
 }
 
+/* Tabela */
 table {
-    border-collapse: separate;
     margin: 5% auto;
+    border-collapse: collapse;
 }
 
 td,th {
@@ -29,23 +30,22 @@ td,th {
     padding: 8px;
 }
 
+/*cor das linhas pares*/
 tr:nth-child(even){
     background-color: rgb(144, 247, 238);
 }
 
+/*cor das linhas ímpares*/
 tr:nth-child(odd){
     background-color: rgb(60, 165, 158);
 }
 
+/*cor para quando passa o mouse*/
 tr:hover{
     background-color: rgb(112, 236, 188);
 }
 
+/*Para mesclar linhas e colunas*/
 td[colspan],td[rowspan] {
     text-align: center;
 }
-
-/*vw = view width
-vh = view height*/
-
-/*breackpoint  = 1005*/
