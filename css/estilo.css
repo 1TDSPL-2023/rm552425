@@ -19,31 +19,32 @@ html {
     font-size: 5em;
 }
 
-.cabecalho {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color:aquamarine ;
+table {
+    border-collapse: separate;
+    margin: 5% auto;
 }
 
-.cabecalho nav {
-    display: flex;
-    justify-content: space-around;
-    width: 60%;
-    height: 100%;
-    flex-wrap: wrap;
+td,th {
+    border: 1px solid rgb(1, 21, 1);
+    padding: 8px;
 }
 
-.cabecalho a:hover {
-    color: black;
-    background-color: aliceblue;
+tr:nth-child(even){
+    background-color: rgb(144, 247, 238);
 }
 
-.cabecalho img {
-    width: 30%;
-    max-width: 30%;
+tr:nth-child(odd){
+    background-color: rgb(60, 165, 158);
 }
+
+tr:hover{
+    background-color: rgb(112, 236, 188);
+}
+
+td[colspan],td[rowspan] {
+    text-align: center;
+}
+
 /*vw = view width
 vh = view height*/
 
