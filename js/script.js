@@ -26,3 +26,29 @@
 //h2Element.textContent = "Novo título"; //QUANDO CLICA NO TÍTULO, MUDA O TEXTO
 
 //});
+
+
+
+
+
+//CONST
+//1º REGRA: É obrigatório inicializar a constante na declaração
+//2º REGRA: Não se pode alterar o conteúdo de uma constante durante o fluxo do programa
+//Ex.: const PI = 3.14;
+
+//DIFERENÇA ENTRE VAR E LET
+//var ignora os escopos:
+
+//var nome = "Mariana";
+
+//if (nome != ""){
+    //var nome = "Leonardo";  //não funciona, irá imprimir Mariana
+    //let nome = "Leonardo";  //funciona, irá imprimir Leonardo
+//}
+
+//console.log(nome);
+
+
+//OUTRO EXEMPLO:
+//let fruta = "melão";
+//console.log(fruta);
