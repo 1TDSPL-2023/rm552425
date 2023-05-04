@@ -110,3 +110,56 @@
 //let indice = frutas.indexOf("pêra");
 //frutas.splice(indice,1);
 //console.table(frutas);
+
+
+
+
+
+//ITERANDO ARRAYS
+
+//let frutas = ["uva","laranja","banana","maçã","kiwi","abacate"];
+//console.log("MINHAS FRUTAS: " + frutas);
+
+//frutas.forEach( (frutas) => {
+    //console.log(fruta);
+//});
+
+//let nr1 = [1,2,3,4,5];
+//let nr2 = [6,7,8,9,10];
+
+
+
+
+
+//CONCATENAÇÃO DE ARRAYS
+
+//let nr3 = [nr1,nr2];
+//let nr3 = [...nr1,...nr2];  //para concatenar os arrays e melhorar a inserção dos dados no novo array
+
+
+
+//IMPRIMINDO O NOVO ARRAY CONCATENADO
+
+//console.log("Novo array: " + nr3);
+//nr3.forEach((nr) => {
+    //console.log("Itens do novo array: " + nr);
+//})
+
+
+
+
+
+//CONVERTER HTMLELEMENTS EM ARRAY
+
+//const aElements = document.getElementsByTagName("a");
+//console.log(aElements);
+//const aElementsArray = [...aElements];
+//console.log(aElementsArray);
+
+
+
+//IMPRIMINDO ATRIBUTOS DOS ELEMENTOS RECUPERADOS
+
+//aElementsArray.forEach((a) => {
+    //console.log(a.innerHTML);
+//})
