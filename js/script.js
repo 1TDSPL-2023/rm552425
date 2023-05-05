@@ -19,7 +19,7 @@ b = Math.round(Math.random()*255);
 
 h2Element.setAttribute("style", `color:rgb(${r},${g},${b});`);  //VERSÃO MAIS LIMPA; QUANDO CLICA, MUDA A COR ALEATORIAMENTE
     
-//h2Element.textContent = "Novo título"; //QUANDO CLICA NO TÍTULO, MUDA O TEXTO
+h2Element.textContent = "Novo título"; //QUANDO CLICA NO TÍTULO, MUDA O TEXTO
 
 });
 
