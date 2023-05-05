@@ -26,6 +26,22 @@
         </section>
 
         <footer id="cor3" class="rodape">
+            <h3 class="tit-rod">Sua lista:</h3>
+
+            <div>
+                <form action="/apelido" method="post">
+                    <fieldset>
+                        <div>
+                            <label for="idTexto"></label>
+                            <input type="text" name="texto" id="idTexto" required placeholder="texto">
+                        </div>
+                        <div>
+                            <button type="button" onclick="adicionarFrase()">Enviar</button>
+                        </div>
+                    </fieldset>
+                </form>
+                <ul id="lista"></ul>
+            </div>
             <nav>
                 <a href="#"><img src="./img/github.png" alt="github"></a>
                 <a href="#"><img src="./img/facebook.png" alt="facebook"></a>

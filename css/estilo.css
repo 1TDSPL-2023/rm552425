@@ -18,6 +18,12 @@ html {
     font-size: 5em;
 }
 
+.tit-rod {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
 p {
     text-align: center;
     font-size: 17px;
