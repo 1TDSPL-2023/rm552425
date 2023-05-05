@@ -13,10 +13,35 @@ html {
     font-size: 62.7%px;
 }
 
-
 .tit-sec {
     text-align: center;
     font-size: 5em;
+}
+
+.tit-rod {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+p {
+    text-align: center;
+    font-size: 17px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.botao {
+    font-size: 15px;
+    margin: 0 auto;
+    display: block;
+    width: 105px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.ocultado {
+    display: none;
 }
 
 /* Tabela */

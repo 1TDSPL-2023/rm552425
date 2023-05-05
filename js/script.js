@@ -1,27 +1,27 @@
 //ATRELANDO O EVENTO CLICK AO ELEMENTO H2
-//const h2Element = document.getElementById("titulo");
+const h2Element = document.getElementById("titulo");
 
-//h2Element.addEventListener("click", () =>{
+h2Element.addEventListener("click", () =>{
     //Math função matemática
     //Os métodos floor, round e ceil arredondam os números passados
     //O método random retorna um número entre 0 e 1. Ex: o.1233.
     
-//let r = "";    
-//let g = "";
-//let b = "";
+let r = "";    
+let g = ""; 
+let b = "";
 
     
-//r = Math.round(Math.random()*255);
-//g = Math.round(Math.random()*255);
-//b = Math.round(Math.random()*255);
+r = Math.round(Math.random()*255);
+g = Math.round(Math.random()*255);
+b = Math.round(Math.random()*255);
     
 //h2Element.setAttribute("style", "color:rgb("+r+","+g+","+b+");");  //VERSÃO MENOS LIMPA
 
-//h2Element.setAttribute("style", `color:rgb(${r},${g},${b});`);  //VERSÃO MAIS LIMPA; QUANDO CLICA, MUDA A COR ALEATORIAMENTE
+h2Element.setAttribute("style", `color:rgb(${r},${g},${b});`);  //VERSÃO MAIS LIMPA; QUANDO CLICA, MUDA A COR ALEATORIAMENTE
     
-//h2Element.textContent = "Novo título"; //QUANDO CLICA NO TÍTULO, MUDA O TEXTO
+h2Element.textContent = "Novo título"; //QUANDO CLICA NO TÍTULO, MUDA O TEXTO
 
-//});
+});
 
 
 
