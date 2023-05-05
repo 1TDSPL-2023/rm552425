@@ -40,6 +40,10 @@ p {
     margin-bottom: 20px;
 }
 
+.ocultado {
+    display: none;
+}
+
 /* Tabela */
 table {
     margin: 5% auto;
