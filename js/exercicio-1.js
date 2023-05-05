@@ -16,3 +16,13 @@ buttonElement.addEventListener("click", () =>{
     headerElements.setAttribute("style", `background-color:rgb(${r},${g},${b});`);
     footerElement.setAttribute("style", `background-color:rgb(${r},${g},${b});`);
 });
+
+function adicionarFrase () {
+    let idTexto = document.getElementById("idTexto").value;
+    let list = document.getElementById("lista");
+    const newItem = document.createElement("li");
+
+    newItem.appendChild(document.createTextNode(idTexto));
+    list.appendChild(newItem);
+    document.getElementById("idTexto").value = "";
+}
