@@ -13,10 +13,23 @@ html {
     font-size: 62.7%px;
 }
 
-
 .tit-sec {
     text-align: center;
     font-size: 5em;
+}
+
+p {
+    text-align: center;
+    font-size: 17px;
+}
+
+.botao {
+    font-size: 15px;
+    margin: 0 auto;
+    display: block;
+    width: 105px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* Tabela */
