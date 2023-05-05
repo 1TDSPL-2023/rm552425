@@ -27,6 +27,8 @@ html {
 p {
     text-align: center;
     font-size: 17px;
+    margin-right: 40px;
+    margin-left: 40px;
 }
 
 .botao {

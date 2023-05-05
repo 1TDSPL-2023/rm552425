@@ -36,3 +36,9 @@ imgElements.addEventListener("click", () => {
     imgElements.src = "../botao-rosa-linha.png";
     imgElements.alt = "botao rosa com uma linha cinza no meio"
 });
+
+//Para exibir uma mensagem quando clicar no botão
+function mensagem() {
+    let mensagemElement = document.getElementById("mensagem");
+    mensagemElement.innerHTML = "Isso acontece porque o atributo onclick chama a função ao ser clicado; Essa função utiliza um método que pega o elemento que possui determinado id e que será responsável por mostrar a mensagem na tela; Essa mensagem foi definida pela propriedade .innerHTML";
+}
