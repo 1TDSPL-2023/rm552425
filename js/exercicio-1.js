@@ -1,9 +1,10 @@
+//Para trocar a cor do body
 const bodyElement = document.getElementById("corpo");
 const headerElements = document.getElementById("cor1");
 const buttonElement = document.getElementById("cor2");
 const footerElement = document.getElementById("cor3");
 
-buttonElement.addEventListener("click", () =>{
+buttonElement.addEventListener("click", () => {
     let r = "";
     let g = "";
     let b = "";
@@ -17,6 +18,7 @@ buttonElement.addEventListener("click", () =>{
     footerElement.setAttribute("style", `background-color:rgb(${r},${g},${b});`);
 });
 
+//Para adicionar a frase à lista na página
 function adicionarFrase () {
     let idTexto = document.getElementById("idTexto").value;
     let list = document.getElementById("lista");
@@ -26,3 +28,11 @@ function adicionarFrase () {
     list.appendChild(newItem);
     document.getElementById("idTexto").value = "";
 }
+
+//Para trocar uma imagem por outra
+const imgElements = document.getElementById("fotoBotao");
+
+imgElements.addEventListener("click", () => {
+    imgElements.src = "../botao-rosa-linha.png";
+    imgElements.alt = "botao rosa com uma linha cinza no meio"
+});
