@@ -43,7 +43,7 @@ function mensagem() {
     mensagemElement.innerHTML = "Isso acontece porque o atributo onclick chama a função ao ser clicado; Essa função utiliza um método que pega o elemento que possui determinado id e que será responsável por mostrar a mensagem na tela; Essa mensagem foi definida pela propriedade .innerHTML";
 }
 
-//Criação do botão que oculta um elemento HMTL
+//Para ocultar um elemento HMTL
 function desaparecer () {
     let esconderElement = document.getElementById("esconder");
     esconderElement.classList.add("ocultado");
