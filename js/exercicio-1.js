@@ -1,8 +1,8 @@
 //Para trocar a cor do body
 const bodyElement = document.getElementById("corpo");
-const headerElements = document.getElementById("cor1");
-const buttonElement = document.getElementById("cor2");
-const footerElement = document.getElementById("cor3");
+const headerElements = document.getElementById("corCabeca");
+const footerElement = document.getElementById("corPe");
+const buttonElement = document.getElementById("corTotal");
 
 buttonElement.addEventListener("click", () => {
     let r = "";
@@ -34,7 +34,7 @@ const imgElements = document.getElementById("fotoBotao");
 
 imgElements.addEventListener("click", () => {
     imgElements.src = "../botao-rosa-linha.png";
-    imgElements.alt = "botao rosa com uma linha cinza no meio"
+    imgElements.alt = "botão rosa com uma linha cinza no meio"
 });
 
 //Para exibir uma mensagem quando clicar no botão
