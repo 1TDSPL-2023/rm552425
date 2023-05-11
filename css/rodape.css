@@ -4,12 +4,11 @@
     justify-content: center;
     align-items: center;
     background-color:rgb(190, 136, 240);
-
 }
 
 .rodape nav {
     display: flex;
-    margin-top: 4%;
+    justify-content: space-around;
     width: 100%;
 }
 

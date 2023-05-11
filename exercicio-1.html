@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício</title>
+        <link rel="stylesheet" href="./css/estilo.css">
+        <script src="./js/exercicio-1.js" defer></script>
+    </head>
+
+    <body id="corpo">
+        <header id="corCabeca" class="cabecalho">
+            <img src="./img/http.png" alt="monitor">
+            <nav>
+                <a href="#">Item-1</a>
+                <a href="#">Item-2</a>
+                <a href="#">Item-3</a>
+            </nav>
+        </header>
+
+        <section>
+            <h2 class="tit-sec">Exercício</h1>
+            <br><b><p>O botão abaixo foi programado para gerar cores aleatórias toda vez que é clicado, mudando a cor do fundo da página inteira. Clique para conferir:</p></b>
+            <br><button id="corTotal" class="botao">Clique aqui</button>
+
+            <br><b><p>Também é possível omitir o botão, transformando um determinado elemento no próprio botão. Clique na imagem abaixo para ver a foto sendo trocada por outra:</p></b>
+            <img id="fotoBotao" class="conteudo" src="./img/start.png" alt="botão laranja escrito start">
+        
+            <b><p>O botão abaixo faz aparecer uma mensagem quando nele é clicado.</p></b>
+            <button onclick="mensagem()" class="botao">Clique aqui</button>
+            <p id="mensagem"></p><br>
+
+            <b><p>Já esse botão faz um elemento da página ser ocultado</p></b>
+            <button onclick="desaparecer()" class="botao">Clique aqui</button>
+            <img id="esconder" class="conteudo" src="./img/mestre-dos-magos.png" alt="lobo"><br>
+        </section>
+
+        <footer id="corPe" class="rodape">
+            <h3 class="tit-rod">Sua lista:</h3>
+            <div>
+                <form action="/apelido" method="post">
+                    <fieldset>
+                        <div>
+                            <label for="idTexto"></label>
+                            <input type="text" name="texto" id="idTexto" required placeholder="texto">
+                        </div>
+                        <div>
+                            <button type="button" onclick="adicionarFrase()">Enviar</button>
+                        </div>
+                    </fieldset>
+                </form>
+                <ul id="lista"></ul>
+            </div>
+            <nav>
+                <a href="#"><img src="./img/github.png" alt="github"></a>
+                <a href="#"><img src="./img/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="./img/twitter.png" alt="twitter"></a>
+            </nav>
+        </footer>
+    </body>
