@@ -1,34 +1,34 @@
 //CONSTRUIR UMA LISTA DE OBJETOS
-let listaDeUsuarios = [
-    {
-        nomeCompleto : "Edulado Capacho",
-        emailUsuario : "dudu@email.com",
-        senhaUsuario : "123456"
-    },
-    {
-        nomeCompleto : "José das Couves",
-        emailUsuario : "jose@email.com",
-        senhaUsuario : "123456"
-    },
-    {
-        nomeCompleto : "Paulo Cabuloso",
-        emailUsuario : "paulo@email.com",
-        senhaUsuario : "123456"
-    },
-    {
-        nomeCompleto : "Leonaldo Tufo",
-        emailUsuario : "lele@email.com",
-        senhaUsuario : "123456"
-    },
-    {
-        nomeCompleto : "Mathias Aires",
-        emailUsuario : "momo@email.com",
-        senhaUsuario : "123456"
-    }
-];
+// let listaDeUsuarios = [
+//     {
+//         nomeCompleto : "Edulado Capacho",
+//         emailUsuario : "dudu@email.com",
+//         senhaUsuario : "123456"
+//     },
+//     {
+//         nomeCompleto : "José das Couves",
+//         emailUsuario : "jose@email.com",
+//         senhaUsuario : "123456"
+//     },
+//     {
+//         nomeCompleto : "Paulo Cabuloso",
+//         emailUsuario : "paulo@email.com",
+//         senhaUsuario : "123456"
+//     },
+//     {
+//         nomeCompleto : "Leonaldo Tufo",
+//         emailUsuario : "lele@email.com",
+//         senhaUsuario : "123456"
+//     },
+//     {
+//         nomeCompleto : "Mathias Aires",
+//         emailUsuario : "momo@email.com",
+//         senhaUsuario : "123456"
+//     }
+// ];
 
 //ADICIONANDO A LISTA DE USUÁRIOS NO LOCAL-STORAGE
-localStorage.setItem("listaUser", JSON.stringify(listaDeUsuarios));
+// localStorage.setItem("listaUser", JSON.stringify(listaDeUsuarios));
 
 //RECUPERANDO OS ELEMENTOS INPUTS DO FORM
 const inputEmail = document.querySelector("#idEmail");
@@ -72,9 +72,15 @@ addEventListener("click",(evt)=>{
     if(usuarioLogado.emailUsuarioLogado == usuarioValidado.emailUsuario && usuarioLogado.senhaUsuarioLogado == usuarioValidado.senhaUsuario){
         msgStatus.setAttribute("style","color:green");
         msgStatus.innerHTML = `<span><strong>O usuário ${usuarioValidado.nomeCompleto} logou com sucesso!!</strong></span>`;
+
+        //Redirect
+        window.location.href = "../index.html";
+        
     }else{
         msgStatus.setAttribute("style","color:red");
         msgStatus.innerHTML = "<span><strong>Nome de usuário ou senha inválidos...</strong></span>";
     }
+
 }
+
 });
