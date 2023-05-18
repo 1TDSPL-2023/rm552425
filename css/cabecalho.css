@@ -29,6 +29,11 @@
     padding: 20vh 0;
 }
 
+.tit-sec {
+    text-align: center;
+    font-size: 5em;
+}
+
 /* hover serve para mudar a cor quando passa o mouse por cima*/
 .cabecalho a:hover {
     color: black;
