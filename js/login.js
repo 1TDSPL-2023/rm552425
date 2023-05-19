@@ -1,4 +1,4 @@
-//CONSTRUIR UMA LISTA DE OBJETOS
+//CONSTRUIR UMA LISTA DE OBJETOS 
 // let listaDeUsuarios = [
 //     {
 //         nomeCompleto : "Edulado Capacho",
@@ -47,14 +47,13 @@ addEventListener("click",(evt)=>{
     let usuarioValidado = {};
 
     //Recuperando um elemento do DOM
-    if(evt.target.id == "btnSubmit"){
-              
+    if (evt.target.id == "btnSubmit"){
+
     //   listaDeUsuarios.forEach( (usuario)=>{
 
     //       if (usuarioLogado.emailUsuarioLogado == usuario.emailUsuario && usuarioLogado.senhaUsuarioLogado == usuario.senhaUsuario) {
     //           console.log("VALIDADO!");
     //       }
-
     //   });
 
     //RECUPERANDO DO LOCAL-STORAGE A LISTA DE USUÁRIOS
@@ -68,19 +67,16 @@ addEventListener("click",(evt)=>{
           }
     }
 
-
-    if(usuarioLogado.emailUsuarioLogado == usuarioValidado.emailUsuario && usuarioLogado.senhaUsuarioLogado == usuarioValidado.senhaUsuario){
+    if (usuarioLogado.emailUsuarioLogado == usuarioValidado.emailUsuario && usuarioLogado.senhaUsuarioLogado == usuarioValidado.senhaUsuario){
         msgStatus.setAttribute("style","color:green");
         msgStatus.innerHTML = `<span><strong>O usuário ${usuarioValidado.nomeCompleto} logou com sucesso!!</strong></span>`;
 
         //Redirect
         window.location.href = "../index.html";
         
-    }else{
+    } else {
         msgStatus.setAttribute("style","color:red");
         msgStatus.innerHTML = "<span><strong>Nome de usuário ou senha inválidos...</strong></span>";
     }
-
 }
-
 });
