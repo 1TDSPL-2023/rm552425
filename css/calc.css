@@ -1,54 +1,54 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} 
 
-body{
+body {
     width: 100vw;
     height: 80vh;
 }
 
-.form{
+.form { 
     width: 50%;
     height: 30%;
     margin: 0 auto;
 }
 
-input[type='text'],input[type='password']{
+input[type='text'],input[type='password'] {
     width: 80%;
     margin: 1%;
     height: 30px;
 }
 
-button[type='submit']{
+button[type='submit'] {
     display: block;
     width: 80%;
     height: 30px;
     margin: 1% auto;
-    background-color: rgb(43, 99, 3);
+    background-color: rgb(95, 153, 207);
     color: #fff;
     border: 1px none #dddddd;
     cursor: pointer;
 }
 
-.visor-calc input{
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.7);
-    border: 1px none #dddddd;
-    outline-color: #3b3737;
+.visor-calc input {
+    color: #0b0101;
+    background-color: rgba(158, 77, 212, 0.7);
+    border: 1px none #180303;
+    outline-color: #070000;
     letter-spacing: 1px;
     width: 100%;
 }
 
-.btn-calc{
+.btn-calc {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
 }
 
-.btn-calc button{
+.btn-calc button {
     flex-grow: 1;
     flex-basis: 150px;
     margin: 1% 1%;

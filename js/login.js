@@ -1,23 +1,82 @@
-function insereNumero(botao,visor){
+//CONSTRUIR UMA LISTA DE OBJETOS 
+// let listaDeUsuarios = [
+//     {
+//         nomeCompleto : "Edulado Capacho",
+//         emailUsuario : "dudu@email.com",
+//         senhaUsuario : "123456"
+//     },
+//     {
+//         nomeCompleto : "José das Couves",
+//         emailUsuario : "jose@email.com",
+//         senhaUsuario : "123456"
+//     },
+//     {
+//         nomeCompleto : "Paulo Cabuloso",
+//         emailUsuario : "paulo@email.com",
+//         senhaUsuario : "123456"
+//     },
+//     {
+//         nomeCompleto : "Leonaldo Tufo",
+//         emailUsuario : "lele@email.com",
+//         senhaUsuario : "123456"
+//     },
+//     {
+//         nomeCompleto : "Mathias Aires",
+//         emailUsuario : "momo@email.com",
+//         senhaUsuario : "123456"
+//     }
+// ];
 
-    const meuBotao = document.getElementById(botao);
-    const meuVisor = document.getElementById(visor);
+//ADICIONANDO A LISTA DE USUÁRIOS NO LOCAL-STORAGE
+// localStorage.setItem("listaUser", JSON.stringify(listaDeUsuarios));
 
-    meuVisor.value += meuBotao.value;
-}
+//RECUPERANDO OS ELEMENTOS INPUTS DO FORM
+const inputEmail = document.querySelector("#idEmail");
+const inputSenha = document.querySelector("#idPass");
+const msgStatus = document.querySelector("#msg");
 
-function resultado(visor) {
-    const meuVisor = document.getElementById(visor);
-    let armazenadorDeNumeros = [];
-    let novoVisorSemSimbolos = meuVisor.value.split("+");
- 
-    armazenadorDeNumeros = [...novoVisorSemSimbolos];
-    console.log(novoVisorSemSimbolos);
-    let total = 0;
+//CAPTURA DE TODOS OS ELEMENTOS
+addEventListener("click",(evt)=>{
+
+    //CRIANDO UM OBJETO PARA ARMAZENAR OS DADOS DO FORM!
+    let usuarioLogado = {
+        emailUsuarioLogado : inputEmail.value,
+        senhaUsuarioLogado : inputSenha.value
+    }
+
+    let usuarioValidado = {};
+
+    //Recuperando um elemento do DOM
+    if (evt.target.id == "btnSubmit"){
+
+    //   listaDeUsuarios.forEach( (usuario)=>{
+
+    //       if (usuarioLogado.emailUsuarioLogado == usuario.emailUsuario && usuarioLogado.senhaUsuarioLogado == usuario.senhaUsuario) {
+    //           console.log("VALIDADO!");
+    //       }
+    //   });
+
+    //RECUPERANDO DO LOCAL-STORAGE A LISTA DE USUÁRIOS
+    let listaDosUsuarios = JSON.parse(localStorage.getItem("listaUser"));
     
- 
-    armazenadorDeNumeros.forEach((nr)=>{
-        total +=  parseInt(nr);
-    });
-    console.log(total);
+    for (let x = 0; x < listaDosUsuarios.length; x++) {
+          if (usuarioLogado.emailUsuarioLogado == listaDosUsuarios[x].emailUsuario && usuarioLogado.senhaUsuarioLogado == listaDosUsuarios[x].senhaUsuario) {
+              //Passando para o Obj usuarioValidado o obj que foi validado.
+              usuarioValidado = listaDosUsuarios[x];
+              break;
+          }
+    }
+
+    if (usuarioLogado.emailUsuarioLogado == usuarioValidado.emailUsuario && usuarioLogado.senhaUsuarioLogado == usuarioValidado.senhaUsuario){
+        msgStatus.setAttribute("style","color:green");
+        msgStatus.innerHTML = `<span><strong>O usuário ${usuarioValidado.nomeCompleto} logou com sucesso!!</strong></span>`;
+
+        //Redirect
+        window.location.href = "../index.html";
+        
+    } else {
+        msgStatus.setAttribute("style","color:red");
+        msgStatus.innerHTML = "<span><strong>Nome de usuário ou senha inválidos...</strong></span>";
+    }
 }
+});
